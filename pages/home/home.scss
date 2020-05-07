@@ -1,0 +1,34 @@
+#homePage {
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+	.foot {
+		height: 96rpx;
+		.navAction {
+			flex: 1;
+			height: 100%;
+			padding: 13rpx 0rpx 12rpx 0rpx;
+			flex-direction: column;
+			.cuIcon-cu-image {
+				.huiIcongongneng5icon {
+					font-size: 38rpx;
+				}
+				.huiIcongongneng6icon {
+					font-size: 38rpx;
+				}
+				.huiIcongongneng7icon {
+					font-size: 32rpx;
+				}
+				.huiIcongongneng8icon {
+					font-size: 30rpx;
+				}
+			}
+			.navTitle {
+				font-size:24rpx;
+				font-family:SourceHanSansCN;
+				font-weight:500;
+				color:#565656;
+			}
+		}
+	}
+}

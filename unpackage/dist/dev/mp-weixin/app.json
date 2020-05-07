@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/library/library",
+    "pages/mine/mine",
+    "pages/circle/circle"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {
+    "index-page": "/pages/index/index",
+    "library-page": "/pages/library/library",
+    "mine-page": "/pages/mine/mine",
+    "circle-page": "/pages/circle/circle"
+  }
+}
