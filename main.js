@@ -16,6 +16,9 @@ Vue.component('minePage',minePage);
 import circlePage from '@/pages/circle/circle.vue';
 Vue.component('circlePage',circlePage);
 
+import recommend from '@/pages/components/recommend/recommend.vue';
+Vue.component('recommend',recommend);
+
 Vue.config.productionTip = false
 
 App.mpType = 'app'

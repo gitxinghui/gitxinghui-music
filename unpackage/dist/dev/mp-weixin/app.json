@@ -4,7 +4,8 @@
     "pages/index/index",
     "pages/library/library",
     "pages/mine/mine",
-    "pages/circle/circle"
+    "pages/circle/circle",
+    "pages/components/recommend/recommend"
   ],
   "subPackages": [],
   "window": {
@@ -17,6 +18,7 @@
     "index-page": "/pages/index/index",
     "library-page": "/pages/library/library",
     "mine-page": "/pages/mine/mine",
-    "circle-page": "/pages/circle/circle"
+    "circle-page": "/pages/circle/circle",
+    "recommend": "/pages/components/recommend/recommend"
   }
 }

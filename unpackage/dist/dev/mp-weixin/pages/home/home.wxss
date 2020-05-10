@@ -24,41 +24,48 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-#homePage.data-v-11790b68 {
+#homePage.data-v-7f212f6a {
   width: 100%;
   height: 100%;
   background-color: #FFF;
 }
-#homePage .foot.data-v-11790b68 {
-    height: 96rpx;
+#homePage .foot.data-v-7f212f6a {
+  height: 96rpx;
 }
-#homePage .foot .navAction.data-v-11790b68 {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-              flex: 1;
-      height: 100%;
-      padding: 13rpx 0rpx 12rpx 0rpx;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-              flex-direction: column;
+#homePage .foot .navAction.data-v-7f212f6a {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  height: 100%;
+  padding: 13rpx 0rpx 12rpx 0rpx;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
 }
-#homePage .foot .navAction .cuIcon-cu-image .huiIcongongneng5icon.data-v-11790b68 {
-        font-size: 38rpx;
+#homePage .foot .navAction .cuIcon-cu-image .huiIcongongneng5icon.data-v-7f212f6a {
+  font-size: 38rpx;
 }
-#homePage .foot .navAction .cuIcon-cu-image .huiIcongongneng6icon.data-v-11790b68 {
-        font-size: 38rpx;
+#homePage .foot .navAction .cuIcon-cu-image .huiIcongongneng6icon.data-v-7f212f6a {
+  font-size: 38rpx;
 }
-#homePage .foot .navAction .cuIcon-cu-image .huiIcongongneng7icon.data-v-11790b68 {
-        font-size: 32rpx;
+#homePage .foot .navAction .cuIcon-cu-image .huiIcongongneng7icon.data-v-7f212f6a {
+  font-size: 32rpx;
 }
-#homePage .foot .navAction .cuIcon-cu-image .huiIcongongneng8icon.data-v-11790b68 {
-        font-size: 30rpx;
+#homePage .foot .navAction .cuIcon-cu-image .huiIcongongneng8icon.data-v-7f212f6a {
+  font-size: 30rpx;
 }
-#homePage .foot .navAction .navTitle.data-v-11790b68 {
-        font-size: 24rpx;
-        font-family: SourceHanSansCN;
-        font-weight: 500;
-        color: #565656;
+#homePage .foot .navAction .navTitle.data-v-7f212f6a {
+  font-size: 24rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 500;
+  color: #565656;
+}
+#homePage .foot .avatar.data-v-7f212f6a {
+  width: 229rpx;
+}
+#homePage .foot .avatar image.data-v-7f212f6a {
+  width: 71rpx;
+  height: 71rpx;
 }
 

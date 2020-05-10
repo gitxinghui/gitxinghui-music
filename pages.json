@@ -18,6 +18,10 @@
 		{
             "path" : "pages/circle/circle"
         }
+        ,{
+            "path" : "pages/components/recommend/recommend",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
