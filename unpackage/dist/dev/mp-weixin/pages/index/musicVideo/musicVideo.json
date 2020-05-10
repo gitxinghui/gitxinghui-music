@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "mv-video": "/pages/components/mvVideo/mvVideo"
+  }
+}

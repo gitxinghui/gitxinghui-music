@@ -114,135 +114,66 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var musicHall = function musicHall() {__webpack_require__.e(/*! require.ensure | pages/index/musicHall/musicHall */ "pages/index/musicHall/musicHall").then((function () {return resolve(__webpack_require__(/*! ./musicHall/musicHall.vue */ 59));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var musicVideo = function musicVideo() {__webpack_require__.e(/*! require.ensure | pages/index/musicVideo/musicVideo */ "pages/index/musicVideo/musicVideo").then((function () {return resolve(__webpack_require__(/*! ./musicVideo/musicVideo.vue */ 66));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
+      navCur: 2, // 首页内容切换下表
+      navListData: [
+      {
+        id: 0,
+        title: '音乐馆' },
+
+      {
+        id: 1,
+        title: '原声带' },
+
+      {
+        id: 2,
+        title: '视频' },
+
+      {
+        id: 3,
+        title: '现场' }],
+
+
       indicatorDots: true,
       autoplay: true,
       interval: 2000,
-      duration: 500,
-      // 歌单
-      sheetData: [
-      {
-        title: '推荐歌单',
-        sheets: [
-        {
-          id: 0,
-          image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-          playVolume: '1000',
-          des: '[话语速爆新歌]最新 话语音乐推荐' },
-
-        {
-          id: 2,
-          image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-          playVolume: '1000',
-          des: '[话语速爆新歌]最新 话语音乐推荐' },
-
-        {
-          id: 3,
-          image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-          playVolume: '1000',
-          des: '[话语速爆新歌]最新 话语音乐推荐' },
-
-        {
-          id: 4,
-          image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-          playVolume: '1000',
-          des: '[话语速爆新歌]最新 话语音乐推荐' },
-
-        {
-          id: 5,
-          image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-          playVolume: '1000',
-          des: '[话语速爆新歌]最新 话语音乐推荐' }] },
-
-
-
-      {
-        title: '新歌首发',
-        sheets: [
-        {
-          id: 0,
-          image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-          playVolume: '1000',
-          des: '[话语速爆新歌]最新 话语音乐推荐' }] }] };
-
-
-
-
-
+      duration: 500 };
 
   },
+  components: {
+    musicHall: musicHall,
+    musicVideo: musicVideo },
+
   onLoad: function onLoad() {},
-  methods: {} };exports.default = _default;
+  methods: {
+    /**
+              * @param {Object} e
+              * 切换nav
+              */
+    changeNav: function changeNav(e) {
+      if (this.navCur == e.currentTarget.dataset.index) return false;
+      this.navCur = e.currentTarget.dataset.index;
+    } } };exports.default = _default;
 
 /***/ }),
 
@@ -275,7 +206,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 56:
+/***/ 54:
 /*!*************************************************************************!*\
   !*** E:/个人项目/gitxinghui-music/main.js?{"page":"pages%2Findex%2Findex"} ***!
   \*************************************************************************/
@@ -291,5 +222,5 @@ createPage(_index.default);
 
 /***/ })
 
-},[[56,"common/runtime","common/vendor"]]]);
+},[[54,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/index/index.js.map

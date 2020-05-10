@@ -24,66 +24,38 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.pageIndex.data-v-c0a66cde {
+.musicHall.data-v-16fd5a2c {
   width: 100%;
   height: auto;
-  padding: 0rpx 30rpx 100rpx;
-  background-color: #FFF;
 }
-.pageIndex .pageTop.data-v-c0a66cde {
-  width: 100%;
-  height: 122rpx;
-}
-.pageIndex .pageTop .sidebarBtn.data-v-c0a66cde {
-  font-size: 36rpx;
-  color: #313131;
-}
-.pageIndex .pageTop .navList.data-v-c0a66cde {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-          flex: 1;
-}
-.pageIndex .pageTop .navList .navTitle.data-v-c0a66cde {
-  font-size: 27rpx;
-  font-family: SourceHanSansCN;
-  font-weight: 400;
-  color: #252525;
-}
-.pageIndex .pageTop .navList .activeColor.data-v-c0a66cde {
-  font-size: 36rpx;
-}
-.pageIndex .pageTop .searchBtn.data-v-c0a66cde {
-  font-size: 31rpx;
-  color: #252525;
-}
-.pageIndex .banner.data-v-c0a66cde {
+.musicHall .banner.data-v-16fd5a2c {
   width: 100%;
 }
-.pageIndex .banner .uni-padding-wrap.data-v-c0a66cde {
+.musicHall .banner .uni-padding-wrap.data-v-16fd5a2c {
   width: 100%;
   height: 336rpx;
   border-radius: 10rpx;
 }
-.pageIndex .banner .uni-padding-wrap .swiper.data-v-c0a66cde {
+.musicHall .banner .uni-padding-wrap .swiper.data-v-16fd5a2c {
   width: 100%;
   height: 100%;
 }
-.pageIndex .banner .uni-padding-wrap .swiper .page-section-spacing.data-v-c0a66cde {
+.musicHall .banner .uni-padding-wrap .swiper .page-section-spacing.data-v-16fd5a2c {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.pageIndex .banner .uni-padding-wrap .swiper .page-section-spacing .bannerImage.data-v-c0a66cde {
+.musicHall .banner .uni-padding-wrap .swiper .page-section-spacing .bannerImage.data-v-16fd5a2c {
   width: 100%;
   height: 100%;
 }
-.pageIndex .banner .uni-padding-wrap .swiper .page-section-spacing .point.data-v-c0a66cde {
+.musicHall .banner .uni-padding-wrap .swiper .page-section-spacing .point.data-v-16fd5a2c {
   position: absolute;
   width: 100%;
   bottom: 17rpx;
   right: 15rpx;
 }
-.pageIndex .banner .uni-padding-wrap .swiper .page-section-spacing .point .pointItem.data-v-c0a66cde {
+.musicHall .banner .uni-padding-wrap .swiper .page-section-spacing .point .pointItem.data-v-16fd5a2c {
   width: 10rpx;
   height: 10rpx;
   background: white;
@@ -91,34 +63,34 @@
   border-radius: 50%;
   margin-right: 4rpx;
 }
-.pageIndex .banner .uni-padding-wrap .swiper .page-section-spacing .point .pointItem.data-v-c0a66cde:last-child {
+.musicHall .banner .uni-padding-wrap .swiper .page-section-spacing .point .pointItem.data-v-16fd5a2c:last-child {
   margin-right: 0rpx;
 }
-.pageIndex .banner .uni-padding-wrap .swiper .page-section-spacing .point .activeColor.data-v-c0a66cde {
+.musicHall .banner .uni-padding-wrap .swiper .page-section-spacing .point .activeColor.data-v-16fd5a2c {
   color: #FFFFFF;
 }
-.pageIndex .functionalArea.data-v-c0a66cde {
+.musicHall .functionalArea.data-v-16fd5a2c {
   width: 100%;
   height: 194rpx;
 }
-.pageIndex .functionalArea .functionalItem.data-v-c0a66cde {
+.musicHall .functionalArea .functionalItem.data-v-16fd5a2c {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
 }
-.pageIndex .functionalArea .functionalItem .functionIcon.data-v-c0a66cde {
+.musicHall .functionalArea .functionalItem .functionIcon.data-v-16fd5a2c {
   width: 60rpx;
   height: 60rpx;
 }
-.pageIndex .functionalArea .functionalItem .iconText.data-v-c0a66cde {
+.musicHall .functionalArea .functionalItem .iconText.data-v-16fd5a2c {
   font-size: 24rpx;
   font-family: SourceHanSansCN;
   font-weight: 400;
   color: #292929;
   line-height: 48rpx;
 }
-.pageIndex .recommend.data-v-c0a66cde {
+.musicHall .recommend.data-v-16fd5a2c {
   width: 100%;
 }
 

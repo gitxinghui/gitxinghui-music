@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "music-hall": "/pages/index/musicHall/musicHall",
+    "music-video": "/pages/index/musicVideo/musicVideo"
+  }
 }

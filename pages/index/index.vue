@@ -4,129 +4,61 @@
 		<view class="flex justify-around align-center pageTop">
 			<text class="cuIcon-sort sidebarBtn"></text>
 			<view class="flex justify-around align-center navList">
-				<view class="navTitle activeColor">音乐馆</view>
-				<view class="navTitle">原声带</view>
-				<view class="navTitle">视频</view>
-				<view class="navTitle">现场</view>
+				<view class="navTitle" :class="navCur == index ? 'activeColor':''" v-for="(item,index) in navListData" :key="item.id" :data-index="index" @tap="changeNav">{{item.title}}</view>
 			</view>
 			<text class="cuIcon-search searchBtn"></text>
 		</view>
-		<!-- 轮播图 -->
-		<view class="banner">
-			<view class="uni-padding-wrap">
-				<view class="page-section swiper">
-					<view class="page-section-spacing">
-						<swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
-							<swiper-item>
-								<image class="bannerImage" src="../../static/images/banner.png"></image>
-							</swiper-item>
-						</swiper>
-						<!-- 指示点 -->
-						<view class="point flex justify-end align-center">
-							<view class="pointItem"></view>
-							<view class="pointItem"></view>
-							<view class="pointItem"></view>
-							<view class="pointItem"></view>
-						</view>
-					</view>
-				</view>
-			</view>
-		</view>
-		<!-- 功能区 -->
-		<view class="flex justify-between align-center functionalArea">
-			<view class="flex justify-center align-center functionalItem">
-				<image class="functionIcon" src="../../static/images/icon/svg/icon22.svg" mode=""></image>
-				<view class="iconText">每日推荐</view>
-			</view>
-			<view class="flex justify-between align-center functionalItem">
-				<image class="functionIcon" src="../../static/images/icon/svg/icon23.svg" mode=""></image>
-				<view class="iconText">歌单</view>
-			</view>
-			<view class="flex justify-between align-center functionalItem">
-				<image class="functionIcon" src="../../static/images/icon/svg/icon24.svg" mode=""></image>
-				<view class="iconText">排行榜</view>
-			</view>
-			<view class="flex justify-between align-center functionalItem">
-				<image class="functionIcon" src="../../static/images/icon/svg/icon1.svg" mode=""></image>
-				<view class="iconText">电台</view>
-			</view>
-			<view class="flex justify-between align-center functionalItem">
-				<image class="functionIcon" src="../../static/images/icon/svg/icon2.svg" mode=""></image>
-				<view class="iconText">直播</view>
-			</view>
-		</view>
-		<!-- 推荐区域 -->
-		<view class="recommend">
-			<view class="sheetItem" v-for="(item,index) in sheetData" :key="index">
-				<!--歌单 -->
-				<recommend :sheetData="item"></recommend>
-			</view>
-		</view>
+		<musicHall v-if="navCur == 0"></musicHall>
+		<musicVideo v-if="navCur == 2"></musicVideo>
 	</view>
 </template>
 
 <script>
+	import musicHall from './musicHall/musicHall.vue';
+	import musicVideo from './musicVideo/musicVideo.vue';
 export default {
 	data() {
 		return {
+			navCur: 2, // 首页内容切换下表
+			navListData: [
+				{
+					id: 0,
+					title: '音乐馆'
+				},
+				{
+					id: 1,
+					title: '原声带'
+				},
+				{
+					id: 2,
+					title: '视频'
+				},
+				{
+					id: 3,
+					title: '现场'
+				}
+			],
 			indicatorDots: true,
 			autoplay: true,
 			interval: 2000,
 			duration: 500,
-			// 歌单
-			sheetData: [
-				{
-					title: '推荐歌单',
-					sheets: [
-						{
-							id: 0,
-							image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-							playVolume: '1000',
-							des: '[话语速爆新歌]最新 话语音乐推荐'
-						},
-						{
-							id: 2,
-							image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-							playVolume: '1000',
-							des: '[话语速爆新歌]最新 话语音乐推荐'
-						},
-						{
-							id: 3,
-							image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-							playVolume: '1000',
-							des: '[话语速爆新歌]最新 话语音乐推荐'
-						},
-						{
-							id: 4,
-							image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-							playVolume: '1000',
-							des: '[话语速爆新歌]最新 话语音乐推荐'
-						},
-						{
-							id: 5,
-							image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-							playVolume: '1000',
-							des: '[话语速爆新歌]最新 话语音乐推荐'
-						}
-					]
-				},
-				{
-					title: '新歌首发',
-					sheets: [
-						{
-							id: 0,
-							image: 'https://ae01.alicdn.com/kf/Hfcaab79d1b524aafaa1ab43b2e8e0fa3G.jpg',
-							playVolume: '1000',
-							des: '[话语速爆新歌]最新 话语音乐推荐'
-						}
-					]
-				}
-			]
-			
 		};
 	},
+	components: {
+		musicHall,
+		musicVideo
+	},
 	onLoad() {},
-	methods: {}
+	methods: {
+		/**
+		 * @param {Object} e
+		 * 切换nav
+		 */
+		changeNav(e) {
+			if (this.navCur == e.currentTarget.dataset.index) return false;
+			this.navCur = e.currentTarget.dataset.index;
+		}
+	}
 };
 </script>
 <style lang="scss" scoped>

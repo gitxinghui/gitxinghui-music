@@ -1,32 +1,6 @@
-.pageIndex {
+.musicHall {
 	width: 100%;
 	height: auto;
-	padding: 0rpx 30rpx 100rpx;
-	background-color: #FFF;
-	.pageTop {
-		width: 100%;
-		height: 122rpx;
-		.sidebarBtn {
-			font-size: 36rpx;
-			color: #313131;
-		}
-		.navList {
-			flex: 1;
-			.navTitle {
-				font-size:27rpx;
-				font-family:SourceHanSansCN;
-				font-weight:400;
-				color:rgba(37,37,37,1);
-			}
-			.activeColor {
-				font-size:36rpx;
-			}
-		}
-		.searchBtn {
-			font-size: 31rpx;
-			color: #252525;
-		}
-	}
 	.banner {
 		width: 100%;
 		.uni-padding-wrap {
