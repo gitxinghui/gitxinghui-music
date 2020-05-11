@@ -176,7 +176,7 @@ var _self = null;var _default =
 {
   data: function data() {
     return {
-      pageCur: 'index' };
+      pageCur: 'library' };
 
   },
   onLoad: function onLoad(options) {

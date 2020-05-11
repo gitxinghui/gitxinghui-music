@@ -1,0 +1,100 @@
+.libraryPage {
+	width: 100%;
+	height: auto;
+	padding: 0rpx 0rpx 100rpx;
+	background-color: #FFF;
+	.pageTop {
+		width: 100%;
+		height: 122rpx;
+		.sidebarBtn {
+			font-size: 58rpx;
+			color: #313131;
+		}
+		.searchBox {
+			width:538rpx;
+			height:63rpx;
+			padding: 16rpx 19rpx;
+			background:rgba(255,255,255,1);
+			// border: 1rpx solid #C9C9C9;
+			box-shadow: 0rpx 0rpx 5rpx #C9C9C9;
+			border-radius:10rpx;
+			.cuIcon-search {
+				font-size: 31rpx;
+				color: #313131;
+			}
+			.searchInput {
+				flex: 1;
+				font-size:24rpx;
+				font-family:SourceHanSansCN;
+				font-weight:400;
+				color:rgba(86,86,86,1);
+				padding-left: 31rpx;
+			}
+		}
+		.listen {
+			text-align: center;
+			.huiIcongongneng15icon {
+				font-size: 28rpx;
+				color: #313131;
+			}
+			.listenText {
+				font-size:18rpx;
+				font-family:SourceHanSansCN;
+				font-weight:400;
+				color:rgba(86,86,86,1);
+			}
+		}
+	}
+	.card-swiper {
+		swiper-item {
+			width: 665rpx!important;
+			padding: 0rpx;
+			left: 42rpx;
+			.swiper-item {
+				height: 332rpx!important;
+			}
+		}
+		.wx-swiper-dots.wx-swiper-dots-horizontal{
+		     margin-bottom: 30rpx;
+		}
+		.wx-swiper-dot{
+		    width:18rpx;
+		    display: inline-flex;
+		    height: 7rpx;
+		    margin-left: 6rpx;
+		    justify-content:space-between;
+		}
+		.wx-swiper-dot::before{
+		    content: '';
+		    flex-grow: 1; 
+		    background: #C9C9C9;
+		    border-radius: 8rpx
+		}
+		.wx-swiper-dot-active::before{
+		    background:linear-gradient(0deg,rgba(196,113,245,1),rgba(250,113,205,1));
+		}
+	}
+	.functionalArea {
+		width: 100%;
+		padding: 0rpx 28rpx;
+		height: 194rpx;
+		.functionalItem  {
+			flex-direction: column;
+			.functionIcon {
+				width: 60rpx;
+				height: 60rpx;
+			}
+			.iconText {
+				font-size:24rpx;
+				font-family:SourceHanSansCN;
+				font-weight:400;
+				color:rgba(41,41,41,1);
+				line-height:48rpx;
+			}
+		}
+	}
+	.recommend {
+		width: 100%;
+		padding: 0rpx 28rpx;
+	}
+}

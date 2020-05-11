@@ -281,7 +281,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 {
   data: function data() {
     return {
-      navCur: 2, // 首页内容切换下表
+      navCur: 1, // 首页内容切换下表
       navListData: [
       {
         id: 0,
@@ -468,13 +468,179 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
-    return {};
+    return {
+      // 轮播图
+      cardCur: 0,
+      swiperList: [
+      {
+        id: 0,
+        type: 'image',
+        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg' },
+
+      {
+        id: 1,
+        type: 'image',
+        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big37006.jpg' },
+
+      {
+        id: 2,
+        type: 'image',
+        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg' },
+
+      {
+        id: 3,
+        type: 'image',
+        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg' },
+
+      {
+        id: 4,
+        type: 'image',
+        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg' },
+
+      {
+        id: 5,
+        type: 'image',
+        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg' },
+
+      {
+        id: 6,
+        type: 'image',
+        url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg' }],
 
 
-  } };exports.default = _default;
+      dotStyle: true,
+      towerStart: 0,
+      direction: '',
+      // 歌单
+      sheetData: [
+      {
+        title: '推荐曲风',
+        sheets: [
+        {
+          id: 0,
+          image: 'https://ae01.alicdn.com/kf/Hfeb85f1814d34af59268bfdb35520348m.jpg',
+          name: '静谧' },
+
+        {
+          id: 0,
+          image: 'https://ae01.alicdn.com/kf/Hfeb85f1814d34af59268bfdb35520348m.jpg',
+          name: '静谧' },
+
+        {
+          id: 0,
+          image: 'https://ae01.alicdn.com/kf/Hfeb85f1814d34af59268bfdb35520348m.jpg',
+          name: '静谧' },
+
+        {
+          id: 0,
+          image: 'https://ae01.alicdn.com/kf/Hfeb85f1814d34af59268bfdb35520348m.jpg',
+          name: '静谧' },
+
+        {
+          id: 0,
+          image: 'https://ae01.alicdn.com/kf/Hfeb85f1814d34af59268bfdb35520348m.jpg',
+          name: '静谧' }] },
+
+
+
+
+      {
+        title: '热搜歌曲',
+        sheets: [
+        {
+          id: 0,
+          image: 'https://ae01.alicdn.com/kf/Hfeb85f1814d34af59268bfdb35520348m.jpg',
+          name: '静谧' },
+
+        {
+          id: 0,
+          image: 'https://ae01.alicdn.com/kf/Hfeb85f1814d34af59268bfdb35520348m.jpg',
+          name: '静谧' },
+
+        {
+          id: 0,
+          image: 'https://ae01.alicdn.com/kf/Hfeb85f1814d34af59268bfdb35520348m.jpg',
+          name: '静谧' },
+
+        {
+          id: 0,
+          image: 'https://ae01.alicdn.com/kf/Hfeb85f1814d34af59268bfdb35520348m.jpg',
+          name: '静谧' },
+
+        {
+          id: 0,
+          image: 'https://ae01.alicdn.com/kf/Hfeb85f1814d34af59268bfdb35520348m.jpg',
+          name: '静谧' }] }] };
+
+
+
+
+
+
+  },
+  methods: {
+    cardSwiper: function cardSwiper(e) {
+      this.cardCur = e.detail.current;
+    } } };exports.default = _default;
 
 /***/ }),
 /* 27 */
@@ -884,6 +1050,13 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   name: "recommend",
@@ -916,10 +1089,14 @@ var _default =
         {
           image: 'https://pics.images.ac.cn/image/5eb6ebfcc82a8.html',
           playVolume: '1000',
-          des: '[话语速爆新歌]最新 话语音乐推荐' }] } } },
+          des: '[话语速爆新歌]最新 话语音乐推荐' }] } },
 
 
 
+
+    recommendType: {
+      type: String,
+      value: 'index' } },
 
 
   data: function data() {

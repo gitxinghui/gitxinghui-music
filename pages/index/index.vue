@@ -19,7 +19,7 @@
 export default {
 	data() {
 		return {
-			navCur: 2, // 首页内容切换下表
+			navCur: 1, // 首页内容切换下表
 			navListData: [
 				{
 					id: 0,

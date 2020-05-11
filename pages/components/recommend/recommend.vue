@@ -5,8 +5,8 @@
 				<view class="songText">{{sheetData.title}}</view>
 				<text class="cuIcon-right"></text>
 			</view>
-			<!-- 左右滑动歌单 -->
-			<scroll-view class="sheetList" scroll-x="true" >
+			<!-- 左右滑动歌单 类型一 -->
+			<scroll-view v-if="recommendType == 'index'" class="sheetList" scroll-x="true" >
 				<view class="songItem" v-for="(item,index) in sheetData.sheets" :key="item.id">
 					<view class="songImageBox">
 						<image class="songImage" :src="item.image"></image>
@@ -18,6 +18,13 @@
 					<view class="more-cut des">{{item.des}}</view>
 				</view>
 			</scroll-view>
+			<!-- 图片排列歌单 类型二 -->
+			<view v-if="recommendType == 'library'" class="flex justify-start align-start imageSheet">
+				<view class="songItem" v-for="(item,index) in sheetData.sheets" :key="item.id">
+					<image class="songImage" :src="item.image"></image>
+					<view class="flex justify-center align-center songText">{{item.name}}</view>
+				</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -58,6 +65,10 @@
 						}
 					]
 				}
+			},
+			recommendType: {
+				type: String,
+				value: 'index'
 			}
 		},
 		data() {

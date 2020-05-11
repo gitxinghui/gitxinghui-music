@@ -4972,6 +4972,117 @@ page {
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.libraryPage {
+  width: 100%;
+  height: auto;
+  padding: 0rpx 0rpx 100rpx;
+  background-color: #FFF;
+}
+.libraryPage .pageTop {
+  width: 100%;
+  height: 122rpx;
+}
+.libraryPage .pageTop .sidebarBtn {
+  font-size: 58rpx;
+  color: #313131;
+}
+.libraryPage .pageTop .searchBox {
+  width: 538rpx;
+  height: 63rpx;
+  padding: 16rpx 19rpx;
+  background: white;
+  -webkit-box-shadow: 0rpx 0rpx 5rpx #C9C9C9;
+          box-shadow: 0rpx 0rpx 5rpx #C9C9C9;
+  border-radius: 10rpx;
+}
+.libraryPage .pageTop .searchBox .cuIcon-search {
+  font-size: 31rpx;
+  color: #313131;
+}
+.libraryPage .pageTop .searchBox .searchInput {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 24rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #565656;
+  padding-left: 31rpx;
+}
+.libraryPage .pageTop .listen {
+  text-align: center;
+}
+.libraryPage .pageTop .listen .huiIcongongneng15icon {
+  font-size: 28rpx;
+  color: #313131;
+}
+.libraryPage .pageTop .listen .listenText {
+  font-size: 18rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #565656;
+}
+.libraryPage .card-swiper swiper-item {
+  width: 665rpx !important;
+  padding: 0rpx;
+  left: 42rpx;
+}
+.libraryPage .card-swiper swiper-item .swiper-item {
+  height: 332rpx !important;
+}
+.libraryPage .card-swiper .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: 30rpx;
+}
+.libraryPage .card-swiper .wx-swiper-dot {
+  width: 18rpx;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  height: 7rpx;
+  margin-left: 6rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.libraryPage .card-swiper .wx-swiper-dot::before {
+  content: '';
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  background: #C9C9C9;
+  border-radius: 8rpx;
+}
+.libraryPage .card-swiper .wx-swiper-dot-active::before {
+  background: -webkit-gradient(linear, left bottom, left top, from(#c471f5), to(#fa71cd));
+  background: -webkit-linear-gradient(bottom, #c471f5, #fa71cd);
+  background: linear-gradient(0deg, #c471f5, #fa71cd);
+}
+.libraryPage .functionalArea {
+  width: 100%;
+  padding: 0rpx 28rpx;
+  height: 194rpx;
+}
+.libraryPage .functionalArea .functionalItem {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.libraryPage .functionalArea .functionalItem .functionIcon {
+  width: 60rpx;
+  height: 60rpx;
+}
+.libraryPage .functionalArea .functionalItem .iconText {
+  font-size: 24rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #292929;
+  line-height: 48rpx;
+}
+.libraryPage .recommend {
+  width: 100%;
+  padding: 0rpx 28rpx;
+}
 
 @charset "UTF-8";
 /**
@@ -5001,7 +5112,6 @@ page {
 /* 文章场景相关 */
 .SongSheet.data-v-29388aa4 {
   width: 100%;
-  height: 418rpx;
 }
 .SongSheet .title .songText.data-v-29388aa4 {
   font-size: 32rpx;
@@ -5016,13 +5126,14 @@ page {
 .SongSheet .sheetList.data-v-29388aa4 {
   width: 100%;
   white-space: nowrap;
+  margin-top: 39rpx;
 }
 .SongSheet .sheetList .songItem.data-v-29388aa4 {
   display: inline-block;
   width: 220rpx;
   height: 296rpx;
   margin-right: 15rpx;
-  margin-top: 39rpx;
+  margin-bottom: 39rpx;
 }
 .SongSheet .sheetList .songItem .songImageBox.data-v-29388aa4 {
   position: relative;
@@ -5065,6 +5176,42 @@ page {
   margin-top: 11rpx;
 }
 .SongSheet .sheetList .songItem.data-v-29388aa4:last-child {
+  margin-right: 0rpx;
+}
+.SongSheet .imageSheet.data-v-29388aa4 {
+  width: 100%;
+  margin-top: 39rpx;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.SongSheet .imageSheet .songItem.data-v-29388aa4 {
+  position: relative;
+  width: 212rpx;
+  height: 109rpx;
+  background: #434343;
+  border-radius: 10rpx;
+  margin-right: 27rpx;
+  margin-bottom: 34rpx;
+}
+.SongSheet .imageSheet .songItem .songImage.data-v-29388aa4 {
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 1;
+}
+.SongSheet .imageSheet .songItem .songText.data-v-29388aa4 {
+  width: 100%;
+  height: 100%;
+  font-size: 30rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 500;
+  color: white;
+  z-index: 2;
+}
+.SongSheet .imageSheet .songItem.data-v-29388aa4:nth-child(3n) {
   margin-right: 0rpx;
 }
 

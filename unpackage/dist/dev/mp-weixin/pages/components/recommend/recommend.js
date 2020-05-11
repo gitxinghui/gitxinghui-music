@@ -138,6 +138,13 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   name: "recommend",
@@ -170,10 +177,14 @@ var _default =
         {
           image: 'https://pics.images.ac.cn/image/5eb6ebfcc82a8.html',
           playVolume: '1000',
-          des: '[话语速爆新歌]最新 话语音乐推荐' }] } } },
+          des: '[话语速爆新歌]最新 话语音乐推荐' }] } },
 
 
 
+
+    recommendType: {
+      type: String,
+      value: 'index' } },
 
 
   data: function data() {

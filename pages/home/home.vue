@@ -44,7 +44,7 @@
 	export default {
 		data() {
 			return {
-				pageCur: 'index'
+				pageCur: 'library'
 			};
 		},
 		onLoad(options) {

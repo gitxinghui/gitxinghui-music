@@ -1,6 +1,5 @@
 .SongSheet {
 	width: 100%;
-	height: 418rpx;
 	.title {
 		.songText {
 			font-size:32rpx;
@@ -16,12 +15,13 @@
 	.sheetList {
 		width: 100%;
 		white-space: nowrap;
+		margin-top: 39rpx;
 		.songItem {
 			display: inline-block;
 			width: 220rpx;
 			height: 296rpx;
 			margin-right: 15rpx;
-			margin-top: 39rpx;
+			margin-bottom: 39rpx;
 			.songImageBox {
 				position: relative;
 				width: 100%;
@@ -65,6 +65,41 @@
 		}
 		.songItem:last-child {
 			margin-right: 0rpx;
+		}
+	}
+	.imageSheet {
+		width: 100%;
+		margin-top: 39rpx;
+		flex-wrap: wrap;
+		.songItem {
+			position: relative;
+			width:212rpx;
+			height:109rpx;
+			background:rgba(67,67,67,1);
+			border-radius:10rpx;
+			margin-right: 27rpx;
+			margin-bottom: 34rpx;
+			.songImage {
+				position: absolute;
+				left: 0rpx;
+				top: 0rpx;
+				width: 100%;
+				height: 100%;
+				opacity:0.3;
+				z-index: 1;
+			}
+			.songText {
+				width: 100%;
+				height: 100%;
+				font-size:30rpx;
+				font-family:SourceHanSansCN;
+				font-weight:500;
+				color:rgba(255,255,255,1);
+				z-index: 2;
+			}
+		}
+		.songItem:nth-child(3n) {
+			margin-right: 0rpx
 		}
 	}
 }

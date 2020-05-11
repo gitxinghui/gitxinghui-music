@@ -48,7 +48,7 @@
 		<view class="recommend">
 			<view class="sheetItem" v-for="(item,index) in sheetData" :key="index">
 				<!--歌单 -->
-				<recommend :sheetData="item"></recommend>
+				<recommend :sheetData="item" recommendType="index"></recommend>
 			</view>
 		</view>
 	</view>
