@@ -6,6 +6,9 @@
 			font-family:SourceHanSansCN;
 			font-weight:500;
 			color:rgba(41,41,41,1);
+			.num {
+				font-size: 16rpx;
+			}
 		}
 		.cuIcon-right {
 			font-size: 18rpx;
@@ -100,6 +103,45 @@
 		}
 		.songItem:nth-child(3n) {
 			margin-right: 0rpx
+		}
+	}
+	.imageScroll {
+		width: 100%;
+		padding-bottom: 26rpx;
+		white-space: nowrap;
+		margin-top: 39rpx;
+		border-bttom: 6rpx solid #E5E5E5;
+		.songItem {
+			display: inline-block;
+			width: 129rpx;
+			margin-right: 30rpx;
+			.songImage {
+				width: 100%;
+				height: 129rpx;
+			}
+			.playVolume {
+				flex-direction: column;
+				width: 100%;
+				margin-top: 24rpx;
+				text-align: left;
+				padding-left: 4rpx;
+				.sheetName {
+					width: 100%;
+					font-size:28rpx;
+					font-weight:400;
+					color:rgba(45,45,45,1);
+				}
+				.num {
+					width: 100%;
+					font-size:22rpx;
+					font-weight:400;
+					color:rgba(100,100,100,1);
+					margin-top: 17rpx;
+				}
+			}
+		}
+		.songItem:last-child {
+			margin-right: 0rpx;
 		}
 	}
 }

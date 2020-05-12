@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.minePage.data-v-c9229e6a {
+  width: 100%;
+  height: auto;
+  padding: 0rpx 0rpx 100rpx;
+  background-color: #FFF;
+}
+.minePage .pageTop.data-v-c9229e6a {
+  width: 100%;
+  padding: 0rpx 30rpx;
+  padding-bottom: 36rpx;
+  border-bottom: 6rpx solid #E5E5E5;
+}
+.minePage .pageTop .pageNav.data-v-c9229e6a {
+  width: 100%;
+  height: 122rpx;
+}
+.minePage .pageTop .pageNav .sidebarBtn.data-v-c9229e6a {
+  font-size: 58rpx;
+  color: #313131;
+}
+.minePage .pageTop .pageNav .searchBtn.data-v-c9229e6a {
+  font-size: 31rpx;
+  color: #252525;
+}
+.minePage .pageTop .user.data-v-c9229e6a {
+  width: 100%;
+  height: 120rpx;
+}
+.minePage .pageTop .user .name.data-v-c9229e6a {
+  font-size: 60rpx;
+  font-family: SourceHanSansCN;
+  font-weight: bold;
+  color: #313131;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.24414%, #c471f5), to(#fa71cd));
+  background: -webkit-linear-gradient(bottom, #c471f5 0.24414%, #fa71cd 100%);
+  background: linear-gradient(0deg, #c471f5 0.24414%, #fa71cd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.minePage .pageTop .user .avatar.data-v-c9229e6a {
+  width: 62rpx;
+  height: 62rpx;
+}
+.minePage .pageTop .functionalArea.data-v-c9229e6a {
+  width: 100%;
+  margin-top: 30rpx;
+}
+.minePage .pageTop .functionalArea .functionalItem.data-v-c9229e6a {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.minePage .pageTop .functionalArea .functionalItem .functionIcon.data-v-c9229e6a {
+  width: 60rpx;
+  height: 60rpx;
+}
+.minePage .pageTop .functionalArea .functionalItem .iconText.data-v-c9229e6a {
+  font-size: 24rpx;
+  font-family: SourceHanSansCN;
+  font-weight: 400;
+  color: #292929;
+  line-height: 48rpx;
+}
+.minePage .pageCenter.data-v-c9229e6a {
+  width: 100%;
+  border-bottom: 6rpx solid #E5E5E5;
+}
+.minePage .pageCenter .localItem.data-v-c9229e6a {
+  width: 100%;
+  height: 78rpx;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+.minePage .pageCenter .localItem .huiIconFont.data-v-c9229e6a {
+  width: 86rpx;
+  padding-left: 16rpx;
+  color: #313131;
+  text-align: center;
+}
+.minePage .pageCenter .localItem .huiIcongongneng17icon.data-v-c9229e6a {
+  font-size: 38rpx;
+}
+.minePage .pageCenter .localItem .huiIcongongneng18icon.data-v-c9229e6a {
+  font-size: 38rpx;
+}
+.minePage .pageCenter .localItem .huiIcongongneng19icon.data-v-c9229e6a {
+  font-size: 38rpx;
+}
+.minePage .pageCenter .localItem .huiIcongongneng20icon.data-v-c9229e6a {
+  font-size: 34rpx;
+}
+.minePage .pageCenter .localItem .localText.data-v-c9229e6a {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #313131;
+}
+.minePage .pageCenter .localItem .localText .num.data-v-c9229e6a {
+  font-size: 16rpx;
+}
+.minePage .pageCenter .localItem.data-v-c9229e6a:last-child {
+  border-bottom: 0rpx;
+}
+.minePage .pageBottom.data-v-c9229e6a {
+  width: 100%;
+  padding: 36rpx 28rpx 26rpx;
+}
+

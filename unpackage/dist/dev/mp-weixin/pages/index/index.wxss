@@ -35,7 +35,7 @@
   height: 122rpx;
 }
 .pageIndex .pageTop .sidebarBtn.data-v-c0a66cde {
-  font-size: 36rpx;
+  font-size: 58rpx;
   color: #313131;
 }
 .pageIndex .pageTop .navList.data-v-c0a66cde {
