@@ -3,7 +3,10 @@
 		<view class="SongSheet">
 			<view class="flex justify-between align-center title">
 				<view class="songText">{{sheetData.title}}<text v-if="sheetData.num" class="num">({{sheetData.num}})</text></view>
-				<text class="cuIcon-right"></text>
+				<view class="songRight">
+					<text v-if="sheetData.titleTip" class="titleTip">{{sheetData.titleTip}}</text>
+					<text class="cuIcon-right"></text>
+				</view>
 			</view>
 			<!-- 左右滑动歌单 类型一 -->
 			<scroll-view v-if="recommendType == 'index'" class="sheetList" scroll-x="true" >
@@ -32,6 +35,17 @@
 					<view class="flex justify-start align-center playVolume">
 						<view class="sheetName text-cut">{{item.name}}</view>
 						<view class="num">{{item.num}}首</view>
+					</view>
+				</view>
+			</scroll-view>
+			
+			<!-- 图片排列左右滑动 类型四 -->
+			<scroll-view v-if="recommendType == 'circle'" class="topicScroll" scroll-x="true" >
+				<view class="songItem" v-for="(item,index) in sheetData.sheets" :key="item.id">
+					<image class="songImage" :src="item.image"></image>
+					<view class="flex justify-end align-start playVolume">
+						<view class="sheetName text-cut">{{item.name}}</view>
+						<view class="line"></view>
 					</view>
 				</view>
 			</scroll-view>

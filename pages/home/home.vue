@@ -44,7 +44,7 @@
 	export default {
 		data() {
 			return {
-				pageCur: 'mine'
+				pageCur: 'circle'
 			};
 		},
 		onLoad(options) {

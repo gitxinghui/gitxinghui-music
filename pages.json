@@ -16,7 +16,10 @@
         }
         ,
 		{
-            "path" : "pages/circle/circle"
+            "path" : "pages/circle/circle",
+			"style": {
+				"navigationStyle": "custom"
+			}
         }
         ,{
             "path" : "pages/components/recommend/recommend",
