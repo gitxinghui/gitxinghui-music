@@ -328,7 +328,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 59:
+/***/ 67:
 /*!*****************************************************************************!*\
   !*** E:/个人项目/gitxinghui-music/main.js?{"page":"pages%2Flibrary%2Flibrary"} ***!
   \*****************************************************************************/
@@ -344,5 +344,5 @@ createPage(_library.default);
 
 /***/ })
 
-},[[59,"common/runtime","common/vendor"]]]);
+},[[67,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/library/library.js.map

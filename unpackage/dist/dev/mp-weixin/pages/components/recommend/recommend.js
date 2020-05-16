@@ -248,7 +248,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 62:
+/***/ 70:
 /*!**********************************************************************************************!*\
   !*** E:/个人项目/gitxinghui-music/main.js?{"page":"pages%2Fcomponents%2Frecommend%2Frecommend"} ***!
   \**********************************************************************************************/
@@ -264,5 +264,5 @@ createPage(_recommend.default);
 
 /***/ })
 
-},[[62,"common/runtime","common/vendor"]]]);
+},[[70,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../../.sourcemap/mp-weixin/pages/components/recommend/recommend.js.map

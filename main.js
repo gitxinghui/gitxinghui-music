@@ -2,6 +2,11 @@ import Vue from 'vue'
 import App from './App'
 
 /**
+ * 公共组件
+ */
+import navTop from '@/pages/components/navTop/navTop.vue';
+Vue.component('navTop',navTop);
+/**
  * 引入页面
  */
 import indexPage from '@/pages/index';

@@ -354,7 +354,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 61:
+/***/ 69:
 /*!***************************************************************************!*\
   !*** E:/个人项目/gitxinghui-music/main.js?{"page":"pages%2Fcircle%2Fcircle"} ***!
   \***************************************************************************/
@@ -370,5 +370,5 @@ createPage(_circle.default);
 
 /***/ })
 
-},[[61,"common/runtime","common/vendor"]]]);
+},[[69,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/circle/circle.js.map

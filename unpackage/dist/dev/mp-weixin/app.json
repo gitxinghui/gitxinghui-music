@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/musicPlay/musicPlay",
     "pages/home/home",
     "pages/index/index",
     "pages/library/library",
@@ -15,6 +16,7 @@
     "backgroundColor": "#F8F8F8"
   },
   "usingComponents": {
+    "nav-top": "/pages/components/navTop/navTop",
     "index-page": "/pages/index/index",
     "library-page": "/pages/library/library",
     "mine-page": "/pages/mine/mine",

@@ -313,7 +313,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 60:
+/***/ 68:
 /*!***********************************************************************!*\
   !*** E:/个人项目/gitxinghui-music/main.js?{"page":"pages%2Fmine%2Fmine"} ***!
   \***********************************************************************/
@@ -329,5 +329,5 @@ createPage(_mine.default);
 
 /***/ })
 
-},[[60,"common/runtime","common/vendor"]]]);
+},[[68,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/mine/mine.js.map

@@ -1,0 +1,127 @@
+.musicPlayPage {
+	position: relative;
+	width: 100%;
+	height: calc(100vh - 60rpx);
+	.playBox{
+		width:595rpx;
+		height:800rpx;
+		margin: 0 auto;
+		background: linear-gradient(#c8c3e6,#e7e6e8,#FFFFF);
+		.musicInfo {
+			width: 100%;
+			flex-direction: column;
+			.name {
+				font-size:32rpx;
+				font-weight:500;
+				color:rgba(41,41,41,1);
+				line-height:60rpx;
+			}
+			.singer {
+				font-size:28rpx;
+				font-weight:400;
+				color:rgba(113,113,113,1);
+				line-height:60rpx;
+			}
+			.coverImage {
+				position: relative;
+				width:468rpx;
+				height:468rpx;
+				.cover {
+					position: absolute;
+					left: 0rpx;
+					top: 0rx;
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+					box-shadow: 0rpx 0rpx 200rpx #c8c3e6;
+				}
+				.bigCircle {
+					width:423rpx;
+					height:423rpx;
+					border:3rpx solid rgba(255,255,255,1);
+					opacity:0.8;
+					border-radius:50%;
+					.smallCircle {
+						width:147rpx;
+						height:147rpx;
+						border:3rpx solid rgba(255,255,255,1);
+						opacity:0.5;
+						border-radius:50%;
+					}
+				}
+			}
+			.fun {
+				width: 100%;
+				padding: 0rpx 51rpx;
+				margin-top: 78rpx;
+				.huiIconFont {
+					color: #313131;
+				}
+				.huiIcongongneng2icon {
+					font-size: 34rpx;
+				}
+				.huiIcongongneng11icon {
+					font-size: 38rpx;
+				}
+				.huiIcongongneng3icon {
+					font-size: 34rpx;
+				}
+				.huiIcongongneng4icon {
+					font-size: 38rpx;
+				}
+			}
+		}
+	}
+	.lyric-box {
+		width: 623rpx;
+		margin: 0 auto;
+		.ric {
+			    text-align: center;
+			    color: #f1f1f1;
+			    font-size: 30rpx;
+			    opacity: .8;
+			    height: 40rpx;
+			    white-space: nowrap;
+			    overflow: hidden;
+		}
+		.cur {
+			font-size: 48rpx;
+			opacity: 1;
+		}
+	}
+	.playProgress {
+		width: 100%;
+		margin-top: 62rpx;
+		.beginTime,.endTime {
+			font-size:18rpx;
+			font-weight:400;
+			color:rgba(74,74,74,1);
+		}
+		.schedule {
+			width:550rpx;
+			opacity:0.3;
+			margin: 0rpx 20rpx;
+		}
+	}
+	.playBtnBox {
+		width: 637rpx;
+		margin: 70rpx auto 0;
+		.playType,.musicList {
+			font-size: 36rpx;
+			color: #292929;
+		}
+		.playControl {
+			flex: 1;
+			.pre {
+				font-size: 41rpx;
+			}
+			.pause,.play {
+				margin: 0rpx 117rpx;
+				font-size: 35rpx;
+			}
+			.next {
+				font-size: 41rpx;
+			}
+		}
+	}
+}

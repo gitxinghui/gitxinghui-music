@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var musicHall = function musicHall() {__webpack_require__.e(/*! require.ensure | pages/index/musicHall/musicHall */ "pages/index/musicHall/musicHall").then((function () {return resolve(__webpack_require__(/*! ./musicHall/musicHall.vue */ 63));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var musicVideo = function musicVideo() {__webpack_require__.e(/*! require.ensure | pages/index/musicVideo/musicVideo */ "pages/index/musicVideo/musicVideo").then((function () {return resolve(__webpack_require__(/*! ./musicVideo/musicVideo.vue */ 70));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var musicHall = function musicHall() {__webpack_require__.e(/*! require.ensure | pages/index/musicHall/musicHall */ "pages/index/musicHall/musicHall").then((function () {return resolve(__webpack_require__(/*! ./musicHall/musicHall.vue */ 78));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var musicVideo = function musicVideo() {__webpack_require__.e(/*! require.ensure | pages/index/musicVideo/musicVideo */ "pages/index/musicVideo/musicVideo").then((function () {return resolve(__webpack_require__(/*! ./musicVideo/musicVideo.vue */ 85));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -206,7 +206,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 58:
+/***/ 66:
 /*!*************************************************************************!*\
   !*** E:/个人项目/gitxinghui-music/main.js?{"page":"pages%2Findex%2Findex"} ***!
   \*************************************************************************/
@@ -222,5 +222,5 @@ createPage(_index.default);
 
 /***/ })
 
-},[[58,"common/runtime","common/vendor"]]]);
+},[[66,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/index/index.js.map
